@@ -1,0 +1,272 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>King Sukh Guest House — Redesigned</title>  <!-- Tailwind (CDN for quick prototype) -->  <script src="https://cdn.tailwindcss.com"></script>  <!-- Meta / SEO -->  <meta name="description" content="King Sukh Guest House — comfortable affordable stays in a peaceful environment. Book rooms, view gallery, contact us." />  <!-- Favicon placeholder -->  <link rel="icon" href="assets/logo.png" />  <style>
+    /* Small custom styles */
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+    .hero-bg { background-position: center; background-size: cover; }
+  </style></head>
+<body class="antialiased text-gray-800">  <!-- NAVBAR -->  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur shadow">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Logo" class="h-10 w-10 rounded" />
+          <span class="font-semibold text-lg">King Sukh Guest House</span>
+        </a><nav id="nav" class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#about" class="hover:text-green-700">About</a>
+      <a href="#rooms" class="hover:text-green-700">Rooms</a>
+      <a href="#gallery" class="hover:text-green-700">Gallery</a>
+      <a href="#testimonials" class="hover:text-green-700">Testimonials</a>
+      <a href="#contact" class="hover:text-green-700">Contact</a>
+      <a href="#" class="ml-4 inline-block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Book Now</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button id="mobileBtn" class="md:hidden p-2 rounded hover:bg-gray-100">
+      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Mobile menu panel -->
+<div id="mobileMenu" class="md:hidden hidden">
+  <div class="px-4 pb-4 space-y-2">
+    <a href="#about" class="block py-2">About</a>
+    <a href="#rooms" class="block py-2">Rooms</a>
+    <a href="#gallery" class="block py-2">Gallery</a>
+    <a href="#testimonials" class="block py-2">Testimonials</a>
+    <a href="#contact" class="block py-2">Contact</a>
+    <a href="#" class="block py-2 bg-green-600 text-white text-center rounded-md">Book Now</a>
+  </div>
+</div>
+
+  </header>  <main class="mt-16">
+    <!-- HERO -->
+    <section id="home" class="hero-bg h-[80vh] flex items-center" style="background-image:url('assets/hero.jpg')">
+      <div class="w-full bg-black/40 h-full flex items-center">
+        <div class="max-w-6xl mx-auto px-6 py-16 text-white">
+          <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">Experience Comfort & Warm Hospitality</h2>
+          <p class="mt-4 max-w-2xl">King Sukh Guest House offers clean rooms, friendly service, and a tranquil environment for travellers and families.</p>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="#rooms" class="inline-block bg-green-600 px-6 py-3 rounded-md font-medium">View Rooms</a>
+            <a href="#contact" class="inline-block bg-white text-gray-800 px-6 py-3 rounded-md font-medium">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- ABOUT -->
+<section id="about" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h3 class="text-2xl font-semibold">About King Sukh Guest House</h3>
+      <p class="mt-4 text-gray-700">Located in a peaceful neighbourhood, King Sukh Guest House provides cozy rooms, nutritious breakfasts, and helpful staff to ensure a pleasant stay. We take pride in cleanliness and personalized service.</p>
+      <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600">
+        <li>✔ Free Wi-Fi</li>
+        <li>✔ Hot water</li>
+        <li>✔ Daily housekeeping</li>
+        <li>✔ On-site parking</li>
+      </ul>
+    </div>
+    <div class="rounded overflow-hidden shadow-lg">
+      <img src="assets/about.jpg" alt="About" class="w-full h-64 object-cover" />
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms" class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex items-center justify-between">
+      <h3 class="text-2xl font-semibold">Our Rooms</h3>
+      <p class="text-sm text-gray-500">Comfortable & affordable — choose what fits you.</p>
+    </div>
+
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Room card -->
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img src="assets/room1.jpg" alt="Deluxe Room" class="w-full h-44 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold">Deluxe Room</h4>
+          <p class="text-sm text-gray-600 mt-2">Double bed, ensuite bathroom, complimentary tea/coffee.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-lg font-bold">₹1,200/night</div>
+            <a href="#contact" class="inline-block bg-green-600 text-white px-3 py-1 rounded">Book</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img src="assets/room2.jpg" alt="AC Room" class="w-full h-44 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold">AC Room</h4>
+          <p class="text-sm text-gray-600 mt-2">Air-conditioned room with TV and attached bathroom.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-lg font-bold">₹1,600/night</div>
+            <a href="#contact" class="inline-block bg-green-600 text-white px-3 py-1 rounded">Book</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img src="assets/room3.jpg" alt="Family Suite" class="w-full h-44 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold">Family Suite</h4>
+          <p class="text-sm text-gray-600 mt-2">Spacious suite for families, extra bedding available.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-lg font-bold">₹2,400/night</div>
+            <a href="#contact" class="inline-block bg-green-600 text-white px-3 py-1 rounded">Book</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-2xl font-semibold">Gallery</h3>
+    <p class="text-sm text-gray-500 mt-2">A few photos from the property.</p>
+
+    <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <button class="gallery-item overflow-hidden rounded-lg" data-src="assets/gallery1.jpg"><img src="assets/gallery1_thumb.jpg" alt="g1" class="w-full h-40 object-cover"/></button>
+      <button class="gallery-item overflow-hidden rounded-lg" data-src="assets/gallery2.jpg"><img src="assets/gallery2_thumb.jpg" alt="g2" class="w-full h-40 object-cover"/></button>
+      <button class="gallery-item overflow-hidden rounded-lg" data-src="assets/gallery3.jpg"><img src="assets/gallery3_thumb.jpg" alt="g3" class="w-full h-40 object-cover"/></button>
+      <button class="gallery-item overflow-hidden rounded-lg" data-src="assets/gallery4.jpg"><img src="assets/gallery4_thumb.jpg" alt="g4" class="w-full h-40 object-cover"/></button>
+      <button class="gallery-item overflow-hidden rounded-lg" data-src="assets/gallery5.jpg"><img src="assets/gallery5_thumb.jpg" alt="g5" class="w-full h-40 object-cover"/></button>
+      <button class="gallery-item overflow-hidden rounded-lg" data-src="assets/gallery6.jpg"><img src="assets/gallery6_thumb.jpg" alt="g6" class="w-full h-40 object-cover"/></button>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+      <div class="max-w-4xl w-full px-4">
+        <img id="lbImage" src="" alt="preview" class="w-full rounded-lg" />
+        <div class="mt-4 text-right">
+          <button id="lbClose" class="inline-block bg-white px-4 py-2 rounded-md">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-16">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-2xl font-semibold">What Guests Say</h3>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <blockquote class="p-6 bg-white rounded-lg shadow">"Comfortable stay and very helpful staff. Clean rooms and good food." — <strong>Priya</strong></blockquote>
+      <blockquote class="p-6 bg-white rounded-lg shadow">"Close to markets and temples. Worth the price." — <strong>Ravi</strong></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+    <div>
+      <h3 class="text-2xl font-semibold">Get in touch</h3>
+      <p class="mt-2 text-gray-600">Call or message us to check availability or special requests.</p>
+
+      <ul class="mt-4 text-gray-700">
+        <li class="flex items-center gap-3"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2M15 7v10a2 2 0 0 1-2 2H7l-4 4V7a2 2 0 0 1 2-2h8z"/></svg> Phone: +91-XXXXXXXXXX</li>
+        <li class="flex items-center gap-3 mt-2"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V8l-9 6-9-6v9a2 2 0 0 0 2 2z"/></svg> Email: info@kingsukhguesthouse.com</li>
+      </ul>
+
+      <div class="mt-6">
+        <!-- Google Maps embed placeholder: replace with real embed code -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!2m..." class="w-full h-64 rounded" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <form id="contactForm" class="bg-white p-6 rounded-lg shadow" onsubmit="return false;">
+      <label class="block">Name <input required id="name" class="w-full mt-1 px-3 py-2 border rounded" /></label>
+      <label class="block mt-3">Phone <input required id="phone" class="w-full mt-1 px-3 py-2 border rounded" /></label>
+      <label class="block mt-3">Message <textarea required id="message" class="w-full mt-1 px-3 py-2 border rounded" rows="4"></textarea></label>
+      <div class="mt-4 flex items-center justify-between">
+        <button id="sendBtn" class="bg-green-600 text-white px-4 py-2 rounded">Send Message</button>
+        <div id="formMsg" class="text-sm text-green-600 hidden">Message sent — we'll contact you soon.</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-8 bg-gray-800 text-white">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <div>© <span id="year"></span> King Sukh Guest House</div>
+    <div class="mt-4 md:mt-0 text-sm text-gray-300">Designed & maintained by the team</div>
+  </div>
+</footer>
+
+  </main>  <!-- SCRIPTS -->  <script>
+    // Basic interactive behaviors: mobile menu, lightbox, contact form
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Lightbox
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lbImage = document.getElementById('lbImage');
+    const lbClose = document.getElementById('lbClose');
+
+    galleryItems.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-src');
+        lbImage.src = src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+      });
+    });
+    lbClose.addEventListener('click', () => {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      lbImage.src = '';
+    });
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lbClose.click(); });
+
+    // Simple contact form handling (prototype). Replace with server/API integration.
+    const contactForm = document.getElementById('contactForm');
+    const sendBtn = document.getElementById('sendBtn');
+    const formMsg = document.getElementById('formMsg');
+
+    sendBtn.addEventListener('click', () => {
+      // Basic validation
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !phone || !message) {
+        alert('Please fill all fields');
+        return;
+      }
+
+      // Simulate submission
+      sendBtn.disabled = true;
+      sendBtn.textContent = 'Sending...';
+      setTimeout(() => {
+        sendBtn.disabled = false;
+        sendBtn.textContent = 'Send Message';
+        formMsg.classList.remove('hidden');
+        contactForm.reset();
+      }, 900);
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>  <!-- Notes: Replace placeholder assets in /assets with real images from provided Drive. --></body>
+</html>
